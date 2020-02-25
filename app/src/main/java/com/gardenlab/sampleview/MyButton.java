@@ -21,7 +21,7 @@ public class MyButton extends AppCompatButton {
         init(context);
     }
 
-    public void init(Context context) {
+    public void init(Context context) { //default 값 지정하기
         setBackgroundColor(Color.CYAN);
         setTextColor(Color.BLACK);
 
@@ -55,7 +55,7 @@ public class MyButton extends AppCompatButton {
                 break;
         }
 
-        invalidate();
+        invalidate(); // onDraw method 호출
 
         return true;
     }
